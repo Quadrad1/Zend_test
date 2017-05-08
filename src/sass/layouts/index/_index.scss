@@ -111,11 +111,11 @@ header{
 }
 .article{
   width: 100%;
+  flex-wrap: nowrap;
   margin-bottom: 5px;
   background-image: url($article-bg);
   padding: 30px 10px;
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-start;
   border-bottom: 1px solid $menu-bg-color;
   &__cont-img{

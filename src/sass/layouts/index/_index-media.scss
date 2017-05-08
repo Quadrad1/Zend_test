@@ -1,0 +1,117 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Extra Large Devices, Wide Screens */
+@media only screen and (max-width : 1600px) {
+
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  label {
+   display: block;
+   cursor: pointer;
+   font-size: 0.8rem;
+   line-height: 45px;
+  }
+  input[type="checkbox"] + label span{
+    width: 25px;
+    height: 25px;
+    margin-left: 0;
+  }
+  input[type="radio"] + span:before {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+    border: 2px solid $menu-bg-color;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+//Header
+  .nav__btn{
+    display: block;
+    margin: 10px auto 10px 20px;
+  }
+  .nav{
+    width: 100%;
+  }
+  .menu{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    &__item{
+      position: relative;
+      display: none;
+      margin:  auto;
+      margin-left: 0;
+      flex-basis: 90%;
+      padding: 15px 0;
+      border: 2px solid #777777;
+      border-radius: 3px!important;
+    }
+  }
+//END Header
+
+//Content
+.article{
+  flex-wrap: wrap;
+  &__cont-img{
+    order:1;
+    width: 100%;
+    margin: 10px auto;
+  }
+  &__text{
+    order:2;
+    margin: 10px auto;
+    width: 100%;
+  }
+
+}
+.main-info{
+  &__title{
+    font-size: 1.3rem;
+    margin: 10px auto;
+  }
+  &__inf{
+    font-size: 1rem;
+    font-family: $font-RobotoLight;
+    color:#fff;
+  }
+}
+.learn-more{
+  margin: 10px auto;
+}
+.check-cont{
+  width: 80%;
+  margin: auto;
+  order:1;
+}
+.input-cont{
+  width: 80%;
+  margin: auto;
+  order:2;
+}
+.send{
+  width: 100%;
+  text-align: center;
+  padding: 12px 40%;
+}
+//END Content
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

@@ -1,0 +1,168 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Главная')
+    include pug/styles.pug
+  body
+    include pug/svg.pug
+    .wrap
+      header
+        div.header__container
+          div.nav
+            div.nav__btn
+            ul.nav__list.menu.large-12
+              li.menu__item
+                  |lorem ipsum
+                  ul.sub-menu
+                    li.sub-menu__item
+                      a(href="#" class="sub-menu__item__a")
+                        |lorem ipsum
+                    li.sub-menu__item
+                      a(href="#" class="sub-menu__item__a")
+                        |ipsum
+                    li.sub-menu__item
+                      a(href="#" class="sub-menu__item__a")
+                        |lorem
+                    li.sub-menu__item
+                      a(href="#" class="sub-menu__item__a")
+                        |ipsum lorem
+                    li.sub-menu__item
+                      a(href="#" class="sub-menu__item__a")
+                        |ipsum lorem
+              li.menu__item
+                a(href="#").menu__item__a
+                  |dolor sit
+                  ul.sub-menu
+                    li.sub-menu__item
+                      a(href="#" class="sub-menu__item__a")
+                        |lorem ipsum
+                    li.sub-menu__item
+                      a(href="#" class="sub-menu__item__a")
+                        |ipsum
+                    li.sub-menu__item
+                      a(href="#" class="sub-menu__item__a")
+                        |lorem
+
+              li.menu__item
+                a(href="#").menu__item__a
+                  |amet consectetur
+                  ul.sub-menu
+                    li.sub-menu__item
+                      a(href="#" class="sub-menu__item__a")
+                        |lorem ipsum
+                    li.sub-menu__item
+                      a(href="#" class="sub-menu__item__a")
+                        |ipsum
+                    li.sub-menu__item
+                      a(href="#" class="sub-menu__item__a")
+                        |lorem
+                    li.sub-menu__item
+                      a(href="#" class="sub-menu__item__a")
+                        |ipsum lorem
+              li.menu__item
+                a(href="#").menu__item__a
+                  |adipisicing elit
+                  ul.sub-menu
+                    li.sub-menu__item
+                      a(href="#" class="sub-menu__item__a")
+                        |lorem ipsum
+                    li.sub-menu__item
+                      a(href="#" class="sub-menu__item__a")
+                        |ipsum
+              li.menu__item
+                a(href="#").menu__item__a
+                  |sed
+      .content
+        section.article
+          div.article__cont-img
+            img(src="images/article1-logo.png")
+          div.article__text.main-info
+            p.main-info__title.
+              Lorem ipsum dolor sit amet
+            p.main-info__inf.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum
+              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+
+            a(href="#" target="_blank" class="learn-more")
+              |Learn more
+
+        section.article
+          div.article__text.main-info
+            p.main-info__title.
+              Lorem ipsum dolor sit amet
+            p.main-info__inf.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum
+              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            a(href="#" target="_blank" class="learn-more")
+              |Learn more
+          div.article__cont-img
+            img(src="images/article2-logo.jpg")
+        section.article
+          div.buttons
+            a(href="#" class="btn color-green")
+              |click
+            input(action="" value="click" type="submit" class="btn color-green")
+            button( class="btn color-green")
+              |click
+          div.arrow
+            div.arrow-item
+            div.ar.arrow-right
+            div.ar.arrow-left
+            div.circle
+        section.article
+          form.main-form
+            div.main-form__inputs.input-cont
+              input(type="text" class="input-cont__input" requited placeholder="Your name")
+              input(type="text" class="input-cont__input" requited placeholder="Your email")
+              textarea(class="input-cont__t-area" required)
+              button(type="submit" class="btn color-green send" value="Send")
+                |Send
+            div.main-form__check.check-cont
+              p.title
+                |lorem ipsum Excepteur sint occaecat cupidatat ?
+              .box
+                input(type="checkbox" id="box1")
+                label(for="box1")
+                  span
+                  |lorem ipsum ?
+                input(type="checkbox" id="box2")
+                label(for="box2")
+                  span
+                  |Excepteur sint ?
+                input(type="checkbox" id="box3")
+                label(for="box3")
+                  span
+                  |lorem ipsum ?
+              .r-cont
+                label(for="radio1")
+                  input(type="radio" name="buttons" id="radio1")
+                  span
+                    |lorem
+                label(for="radio2")
+                  input(type="radio" name="buttons" id="radio2")
+                  span
+                    |Ipsim
+                label(for="radio3")
+                  input(type="radio" name="buttons" id="radio3")
+                  span
+                    |Dolor
+
+
+      footer
+    include pug/scripts.pug
